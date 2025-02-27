@@ -186,3 +186,22 @@
   .action-buttons {
     margin-top: 10px;
   }
+
+  .url-validation-error {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff8e1;
+    border-left: 4px solid #ff9800;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .url-validation-error ul {
+    margin-top: 5px;
+    padding-left: 20px;
+  }
+  
+  .url-validation-error li {
+    margin-bottom: 5px;
+  }
