@@ -1,0 +1,112 @@
+:root {
+    /* Palette de couleurs pour les onglets */
+    --pdf-color: #3498db; /* Bleu */
+    --compression-color: #2ecc71; /* Vert */
+    --download-color: #e74c3c; /* Rouge */
+    
+    /* Autres variables de couleur */
+    --primary-bg: #f5f5f5;
+    --secondary-bg: #ffffff;
+    --text-color: #333333;
+    --border-color: #dddddd;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
+    background-color: var(--primary-bg);
+    color: var(--text-color);
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #root {
+    height: 100%;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .app-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #f0f0f0;
+  }
+  
+  .preferences-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+  }
+  
+  .preferences-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Styles généraux pour les composants communs */
+  .button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .button-primary {
+    background-color: #0078d7;
+    color: white;
+  }
+  
+  .button-primary:hover {
+    background-color: #0063b1;
+  }
+  
+  .drag-drop-area {
+    border: 2px dashed var(--border-color);
+    border-radius: 8px;
+    padding: 32px;
+    text-align: center;
+    background-color: var(--secondary-bg);
+    transition: border-color 0.2s;
+  }
+  
+  .drag-drop-area.active {
+    border-color: #0078d7;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background-color: #0078d7;
+    transition: width 0.3s;
+  }

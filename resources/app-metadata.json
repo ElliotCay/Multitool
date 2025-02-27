@@ -1,0 +1,24 @@
+{
+    "name": "MultiTool",
+    "description": "Une application bureautique tout-en-un avec plusieurs outils essentiels",
+    "version": "1.0.0",
+    "author": {
+      "name": "Votre Nom",
+      "email": "votre.email@exemple.com",
+      "url": "https://votre-site.com"
+    },
+    "homepage": "https://multitool-app.exemple.com",
+    "keywords": [
+      "pdf",
+      "compression",
+      "youtube",
+      "twitter",
+      "utilitaires"
+    ],
+    "categories": [
+      "Utility",
+      "Productivity"
+    ],
+    "license": "MIT",
+    "copyright": "Copyright © 2023 Votre Nom"
+  }
